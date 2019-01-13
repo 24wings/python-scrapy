@@ -3,7 +3,7 @@ import pymongo
 
 class MongoDBPipeline(object):
 
-    collection_name = 'lu'
+    collection_name = 'zhubajie'
 
     def __init__(self, mongo_uri, mongo_db):
         self.mongo_uri =mongo_uri
@@ -30,7 +30,7 @@ class MongoDBPipeline(object):
 
 
 class DuplicatesPipeline(object):
-    collection_name = 'lu'
+    collection_name = 'zhubajie'
     
     def __init__(self,mongo_uri, mongo_db):
         self.mongo_uri =mongo_uri

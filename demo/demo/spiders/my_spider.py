@@ -4,8 +4,8 @@ from scrapy.linkextractors import LinkExtractor
 
 class MySpider(CrawlSpider):
     name = '111lu'
-    allowed_domains = ['m.111lu.org']
-    start_urls = ['http://m.111lu.org/','http://m.111lu.org/vlist.php']
+    allowed_domains = ['www.zbj.com']
+    start_urls = ['https://www.zbj.com/']
     def parse_start_url(self,response):
         return {
             'url':response.url,
